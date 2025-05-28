@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+        .link-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .link-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Quiz.html">Take our quiz!</a>
+        <a href="Discover our data.html">Discover the data</a>
+        <a href="Info.html">Info</a>
+    </nav>
+    <div class="container">
+        <img src="LOGOHACKLONG.png" alt="Logo" class="logo">
+    </div>
+    <style>
+        .logo {
+            width: 400px; /* Adjust the width to your desired size */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+
+    <h1>Discover the data on soft skills</h1>
+    <p>With our interactive tool, you can explore the data from the OECD 2023 
+            Report.</p>
+
+    <div class="flourish-embed flourish-chart" data-src="visualisation/20549519"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20549519/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+    <div class="flourish-embed flourish-scatter" data-src="visualisation/20549531"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20549531/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+    <div class="flourish-embed flourish-scatter" data-src="visualisation/20555356"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/20555356/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+    <!-- Button to Download Page as PDF -->
+    <button id="downloadBtn">Download as PDF</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Ensure DOM is fully loaded before adding event listeners
+        const downloadBtn = document.getElementById('downloadBtn');
+        
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', function () {
+                const element = document.body; // Or target a specific section
+                const options = {
+                    filename: 'GitHub_Page.pdf',
+                    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+                };
+                
+                html2pdf()
+                    .set(options)
+                    .from(element)
+                    .save();
+            });
+        } else {
+            console.error('Download button not found. Ensure there is an element with ID "downloadBtn".');
+        }
+    });
+</script>
+    <footer>
+        &copy; CC BY-NC 4.0
+    </footer>
+</body>
+</html>
+

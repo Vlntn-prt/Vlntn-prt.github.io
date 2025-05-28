@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background-color: #3c2e91;
+  color: #fff;
+  padding: 1.5em 2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+nav ul li a {
+  color: #e0d8ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+h1, h2 {
+  color: #3c2e91;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+main {
+  padding: 3em 2em;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+a {
+  color: #513be3;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #311e91;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – Valentina Porta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stile.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9fb;
+      color: #333;
+    }
+
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+    header h1 {
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .project-card {
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      color: #513be3;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background-color: #b432f0;
+      border-color: #b432f0;
+      font-weight: 500;
+    }
+
+    .btn-primary:hover {
+      background-color: #513be3;
+      border-color: #513be3;
+    }
+
+    .card-img-top {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      object-fit: cover;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Valentina Porta – Portfolio Progetti</h1>
+    <nav>
+      <ul>
+        <li><a href="Landing.html">Home</a></li>
+        <li><a href="CV.html">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<main class="container my-5">
+  <div class="row g-4">
+
+    <!-- Project 1 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+        <div class="card-body text-center">
+          <h5 class="card-title">ECHI 2025</h5> 
+          <a href="https://echi.youtrend.it/" target="_blank" class="btn btn-primary mt-2">Scopri di più</a>
+        </div>
+      </div>
+    </div>
+  <!-- Hackathon -->
+<div class="col-md-6 col-lg-4">
+  <div class="card project-card h-100">
+    <a href="multi-project.html">
+      <img src="Hackforbetterlives.png" class="card-img-top" alt="Progetto Multi-Pagina">
+    </a>
+    <div class="card-body text-center">
+      <h5 class="card-title">Hack for better lives 2024</h5>
+      <a href="Hackathon/index.html" class="btn btn-primary mt-2">Esplora</a>
+    </div>
+  </div>
+</div>
+
+    <!-- Project 2 (Instagram post) -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <a href="https://www.instagram.com/p/Cz8aG6XCl8J" target="_blank">
+          <img src="Età parlamentari_2023.png" class="card-img-top" alt="Età dei Parlamentari Instagram">
+        </a>
+        <div class="card-body text-center">
+          <h5 class="card-title">Età dei Parlamentari in Italia dal 1945</h5>
+          <a href="https://www.instagram.com/p/Cz8aG6XCl8J" target="_blank" class="btn btn-primary mt-2">Guarda su Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 (Instagram reel) -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <a href="https://www.instagram.com/reel/C5tDPZRCeJm/" target="_blank">
+          <img src="Lega_2024.png" class="card-img-top" alt="Reel Instagram Politica">
+        </a>
+        <div class="card-body text-center">
+          <h5 class="card-title">Analisi su affluenza alle urne</h5>
+          <a href="https://www.instagram.com/reel/C5tDPZRCeJm/" target="_blank" class="btn btn-primary mt-2">Guarda su Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 (Instagram reel) -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <a href="https://www.instagram.com/p/DBtuxePMkU1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+          <img src="Liguria_2024.png" class="card-img-top" alt="Analisi delle elezioni regionali in Liguria">
+        </a>
+        <div class="card-body text-center">
+          <h5 class="card-title">Analisi delle elezioni regionali in Liguria</h5>
+          <a href="https://www.instagram.com/p/DBtuxePMkU1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="btn btn-primary mt-2">Guarda su Instagram</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+  <!-- MODALS -->
+  <!-- Inserisci qui i contenuti dei modali come già presenti nel tuo codice -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
